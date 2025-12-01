@@ -9,7 +9,7 @@ const Navbar = () => {
         <div className='flex items-center gap-1.5'><span className='p-2 bg-white/10 rounded-full'><CiMail className='text-white'/></span> <span className={`${isMenuOpen ? "hidden":"block"} md:block`}>omar013faruka@gmail.com</span></div>
         
         {/* mobile menu button */}
-        <div className='md:hidden z-50' onClick={() => setIsMenuOpen(!isMenuOpen)}>
+        <div className={`md:hidden z-50 ${isMenuOpen ? "fixed top-7.5 right-6": ""}`} onClick={() => setIsMenuOpen(!isMenuOpen)}>
             <div className={`w-6 h-0.5 bg-gray-300 transition-all ${isMenuOpen ? "rotate-45 translate-y-1.5":""}`}></div>
             <div className={`w-6 h-0.5 my-1.5 bg-gray-300 transition-all ${isMenuOpen ? "opacity-0":""}`}></div>
             <div className={`w-6 h-0.5 bg-gray-300 transition-all ${isMenuOpen ? "-rotate-45 -translate-y-1.5":""}`}></div>
