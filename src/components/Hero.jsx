@@ -1,6 +1,7 @@
 import React from 'react'
 import {motion} from 'framer-motion'
 import { fadeInUp, nameTagAnimation, transition } from '../utils/animations'
+import imge from '../assets/image/omor.png'
 
 const Hero = () => {
   
@@ -14,7 +15,7 @@ const Hero = () => {
 
              {/* static potfolio image */}
              <div className='relative'>
-                <img src="https://scontent.fdac179-1.fna.fbcdn.net/v/t39.30808-6/538770017_1106445471631371_7190799827787978338_n.jpg?_nc_cat=105&ccb=1-7&_nc_sid=6ee11a&_nc_eui2=AeEUY-PbJ0hmN-9EpPasP1ahkx1pAeaw60GTHWkB5rDrQX8yTxQPvj7f6rJ1ocKgELRTa3R0iaMUUctajpBVz8q4&_nc_ohc=FZzhIiQiOxAQ7kNvwHgd65A&_nc_oc=Admm-3kbzi-toOyDEjFqSj5l7J30-puCunCiGUgLrPqduHJCJtNuOdbWb7-2-1UL9LE&_nc_zt=23&_nc_ht=scontent.fdac179-1.fna&_nc_gid=BZQEA6LxpKxsSwzVag8Fug&oh=00_AfjhgmaWAKZ89mML5Yg68Jn5O9QV9deDkJiBuNkhXUGTCg&oe=692FA42C" className='w-32 h-32 rounded-full relative z-10' alt="my profle image" />
+                <img src={imge} className='w-32 h-32 rounded-full relative z-10' alt="my profle image" />
              </div>
 
              {/* animated name tag */}
